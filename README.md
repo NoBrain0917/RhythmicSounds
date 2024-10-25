@@ -1,2 +1,2 @@
 # RhythmicSounds
-Audio library(?) for rhythm games 
+유니티에서 리듬게임을 만들때 유용한 유틸리티를 제공하는 라이브러리?
