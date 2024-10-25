@@ -47,10 +47,10 @@ float FinishedCalloffset //이벤트를 몇초 뒤 실행할지 결정
 static DeviceInfo[] AvaliableDevices //사용 가능한 출력기기 리스트
 
 static void SetOutputDevice(DeviceInfo deviceInfo) //출력 기기 설정
-static void PlayScheduled() //소리 재생 예약
-static void CreateSoundFromBytes(byte[] bytes, string codec) //bytes -> Sound
-static void CreateSoundFromAudioClip(AudioClip clip) //AudioClip -> Sound
-void ReloadFMOD() //FMOD 재시작
+static void PlayScheduled(Sound sound, ulong timeSamples, ChannelGroup channelGroup, out Channel channel) //소리 재생 예약
+static Sound CreateSoundFromBytes(byte[] bytes, string codec) //bytes -> Sound
+static Sound CreateSoundFromAudioClip(AudioClip clip) //AudioClip -> Sound
+static void ReloadFMOD() //FMOD 재시작
 static void SetAudioBufferSize(int bufferSize) //버퍼사이즈 변경
 void PlayMusic(Sound sound, float audioOffset = 0) //메인 음악 재생
 void Stop() //음악 정지
