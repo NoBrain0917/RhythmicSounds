@@ -2,7 +2,6 @@
 유니티에서 리듬게임을 만들때 유용한 유틸리티를 제공하는 라이브러리?    
 매번 코드짜기 귀찮아서 복붙하는 용도로 만듦.   
 <br>
-[오디오 관련 실험한거 개소리 적은거 있어요](https://github.com/NoBrain0917/RhythmicSounds/blob/main/note.md). 
 <br>
 
 ## Difference
