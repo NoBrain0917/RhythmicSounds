@@ -20,12 +20,40 @@
 ### RhythmicAudioSource
 - `AudioSource`를 이용해서 리듬게임을 만들때 유용한 유틸을 제공.   
 - 가볍게 만들거나 키음(타격음 포함)이 없는 리듬게임을 만들 목적이라면 `RhythmicAudioSource`가 적합.
-<br>
+#### 중요 유틸
+```cs
+float CurrentTime //현재 시간
+UnityEvent OnAudioFinished //노래가 끝난후 이벤트 실행
+float FinishedCalloffset //이벤트를 몇초 뒤 실행할지 결정
+
+static void SetAudioBufferSize(int bufferSize) //버퍼사이즈 변경
+void PlayMusic(AudioClip clip, float audioOffset = 0) //메인 음악 재생
+void Stop() //음악 정지
+void UnPause() //언퍼즈
+void Pause() //퍼즈
+```
 
 
 ### RhythmicFMOD
 - `FMOD`를 이용해서 리듬게임을 만들때 유용한 유틸을 제공.  
 - 키음(타격음 포함)이 있거나 레이턴시가 중요한 리듬게임을 만들 목적이라면 `RhythmicFMOD`가 적합.
 - 리겜만들때 FMOD 쌩으로 사용하면 귀찮은 부분이 많음. `RhythmicFMOD`를 사용하는 것을 강력 추천!@!@#!@#!@!@@!!@ (대충 따봉 200개 이모티콘)
+#### 중요 유틸
+```cs
+float CurrentTime //현재 시간
+UnityEvent OnAudioFinished //노래가 끝난후 이벤트 실행
+float FinishedCalloffset //이벤트를 몇초 뒤 실행할지 결정
+static DeviceInfo[] AvaliableDevices //사용 가능한 출력기기 리스트
 
+static void SetOutputDevice(DeviceInfo deviceInfo) //출력 기기 설정
+static void PlayScheduled() //소리 재생 예약
+static void CreateSoundFromBytes(byte[] bytes, string codec) //bytes -> Sound
+static void CreateSoundFromAudioClip(AudioClip clip) //AudioClip -> Sound
+void ReloadFMOD() //FMOD 재시작
+static void SetAudioBufferSize(int bufferSize) //버퍼사이즈 변경
+void PlayMusic(Sound sound, float audioOffset = 0) //메인 음악 재생
+void Stop() //음악 정지
+void UnPause() //언퍼즈
+void Pause() //퍼즈
+```
 
