@@ -20,7 +20,7 @@
 ### RhythmicAudioSource
 - `AudioSource`를 이용해서 리듬게임을 만들때 유용한 유틸을 제공.   
 - 가볍게 만들거나 키음(타격음 포함)이 없는 리듬게임을 만들 목적이라면 `RhythmicAudioSource`가 적합.
-#### 중요 유틸
+#### 주요 유틸
 ```cs
 float CurrentTime //현재 시간
 UnityEvent OnAudioFinished //노래가 끝난후 이벤트 실행
@@ -31,6 +31,7 @@ void PlayMusic(AudioClip clip, float audioOffset = 0) //메인 음악 재생
 void Stop() //음악 정지
 void UnPause() //언퍼즈
 void Pause() //퍼즈
+//etc..
 ```
 
 
@@ -38,7 +39,7 @@ void Pause() //퍼즈
 - `FMOD`를 이용해서 리듬게임을 만들때 유용한 유틸을 제공.  
 - 키음(타격음 포함)이 있거나 레이턴시가 중요한 리듬게임을 만들 목적이라면 `RhythmicFMOD`가 적합.
 - 리겜만들때 FMOD 쌩으로 사용하면 귀찮은 부분이 많음. `RhythmicFMOD`를 사용하는 것을 강력 추천!@!@#!@#!@!@@!!@ (대충 따봉 200개 이모티콘)
-#### 중요 유틸
+#### 주요 유틸
 ```cs
 float CurrentTime //현재 시간
 UnityEvent OnAudioFinished //노래가 끝난후 이벤트 실행
@@ -55,5 +56,6 @@ void PlayMusic(Sound sound, float audioOffset = 0) //메인 음악 재생
 void Stop() //음악 정지
 void UnPause() //언퍼즈
 void Pause() //퍼즈
+//etc..
 ```
 
