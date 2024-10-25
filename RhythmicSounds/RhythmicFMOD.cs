@@ -99,6 +99,13 @@ namespace RhythmicSounds
         
         
         /// <summary>
+        /// Whether the specified delay is over.
+        /// </summary>
+        /// <returns></returns>
+        public bool IsWaitingDelayFinished => (_interpolatedDspTime - _audioStartTimeSamples) >= WaitingDelay;
+        
+        
+        /// <summary>
         /// A list of available drivers.
         /// </summary>
         public static DeviceInfo[] AvaliableDevices { get; private set; }
